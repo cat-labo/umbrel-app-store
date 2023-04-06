@@ -2,7 +2,7 @@ manifestVersion: 1
 id: cat-labo-scrutiny
 name: Scrutiny
 tagline: WebUI for smartd S.M.A.R.T monitoring
-icon: https://raw.githubusercontent.com/AnalogJ/scrutiny/master/webapp/frontend/src/assets/images/logo/scrutiny-logo-dark.svg
+icon: https://github.com/AnalogJ/scrutiny/raw/master/webapp/frontend/src/assets/images/logo/scrutiny-logo-dark.png
 category: Development
 version: "0.6.0"
 port: 13000
