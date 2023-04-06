@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: cat-labo-scrutiny
+name: Scrutiny
+tagline: WebUI for smartd S.M.A.R.T monitoring
+icon: https://raw.githubusercontent.com/AnalogJ/scrutiny/master/webapp/frontend/src/assets/images/logo/scrutiny-logo-dark.svg
+category: Development
+version: "0.6.0"
+port: 13000
+description: >-
+  Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates.
+
+developer: AnalogJ
+website: https://github.com/AnalogJ/scrutiny
+submitter: cat-labo
+submission: https://github.com/AnalogJ/scrutiny
+repo: https://github.com/AnalogJ/scrutiny
+support: https://github.com/AnalogJ/scrutiny/issues
+gallery:
+  - https://i.imgur.com/WF3yYgu.png
+  - https://i.imgur.com/sSOwrpX.png
+  - https://i.imgur.com/Q6NzWC8.png
+releaseNotes: >-
+  Initial release.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

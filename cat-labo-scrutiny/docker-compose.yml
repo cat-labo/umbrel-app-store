@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: cat-labo-scrutiny-scrutiny_1
+      APP_PORT: 8080
+
+  scrutiny:
+    image: ghcr.io/analogj/scrutiny:v0.6.0-omnibus
+    container_name: scrutiny
+    privileged: true
+    cap_add:
+      - SYS_RAWIO
+      - SYS_ADMIN
+    volumes:
+      - /run/udev:/run/udev:ro
+      - ${APP_DATA_DIR}/data/config:/opt/scrutiny/config
+      - ${APP_DATA_DIR}/data/influxdb:/opt/scrutiny/influxdb
