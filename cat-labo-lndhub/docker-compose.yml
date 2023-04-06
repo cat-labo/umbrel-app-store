@@ -1,0 +1,34 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: cat-labo-lndhub_lndhub_1
+      APP_PORT: 3000
+      PROXY_AUTH_ADD: "false"
+
+  lndhub:
+    image: ghcr.io/cat-labo/lndhub.go:0.13.0
+    user: "1000:1000"
+    depends_on: [ "postgres" ]
+    restart: on-failure
+    stop_grace_period: "1m"
+    volumes:
+      - "${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro"
+    environment:
+      JWT_SECRET: "${APP_SEED}"
+      LND_CERT_FILE: "/lnd/tls.cert"
+      LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/${APP_BITCOIN_NETWORK}/admin.macaroon"
+      LND_ADDRESS: "$APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT"
+      DATABASE_URI: "postgresql://lndhub:moneyprintergobrrr@cat-labo-lndhub_postgres_1:5432/lndhub?sslmode=disable"
+
+  postgres:
+    image: postgres:15.2-bullseye
+    restart: always
+    stop_grace_period: 1m
+    environment:
+      POSTGRES_DB: lndhub
+      POSTGRES_PASSWORD: moneyprintergobrrr
+      POSTGRES_USER: lndhub
+    volumes:
+      - ${APP_DATA_DIR}/data:/var/lib/postgresql/data

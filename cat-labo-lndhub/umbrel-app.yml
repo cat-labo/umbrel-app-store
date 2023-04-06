@@ -1,0 +1,32 @@
+manifestVersion: 1
+id: cat-labo-lndhub
+name: LndHub.go
+tagline: Connect BlueWallet to your Lightning node
+icon: https://raw.githubusercontent.com/getAlby/lndhub.go/main/static/img/logo.png
+category: Wallet Servers
+version: "0.13.0"
+port: 13001
+description: >-
+  Run LndHub.go in the most private and secure way possible by
+  removing 3rd parties and connecting it directly to your Umbrel's Lightning
+  node.
+
+
+  You can pair multiple BlueWallet accounts, so your friends and family can pair their BlueWallet with your Umbrel for a trust-minimized setup.
+developer: getAlby
+website: https://github.com/getAlby/lndhub.go
+submitter: cat-labo
+submission: https://github.com/cat-labo
+repo: https://github.com/getAlby/lndhub.go
+support: https://github.com/getAlby/lndhub.go/issues
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+releaseNotes: >-
+  Initial release.
+dependencies:
+  - lightning
+path: ""
+defaultUsername: ""
+defaultPassword: ""
