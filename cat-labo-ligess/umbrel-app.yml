@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: cat-labo-ligess
+name: ligess
+tagline: LUD-06, LUD-16
+icon: https://i.imgur.com/ngIJk9v.png
+category: Wallet Servers
+version: "0.0.0"
+port: 13002
+description: >-
+  Run ligess in the most private and secure way possible by
+  removing 3rd parties and connecting it directly to your Umbrel's Lightning
+  node.
+developer: Dolu89
+website: https://github.com/Dolu89/ligess
+submitter: cat-labo
+submission: https://github.com/cat-labo
+repo: https://github.com/Dolu89/ligess
+support: https://github.com/Dolu89/ligess/issues
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+releaseNotes: >-
+  Initial release.
+dependencies:
+  - lightning
+path: ""
+defaultUsername: ""
+defaultPassword: ""
