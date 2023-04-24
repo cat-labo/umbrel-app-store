@@ -4,7 +4,7 @@ name: Scrutiny
 tagline: WebUI for smartd S.M.A.R.T monitoring
 icon: https://github.com/AnalogJ/scrutiny/raw/master/webapp/frontend/src/assets/images/logo/scrutiny-logo-dark.png
 category: Development
-version: "0.6.0"
+version: "0.7.1"
 port: 13000
 description: >-
   Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates.
@@ -20,7 +20,7 @@ gallery:
   - https://i.imgur.com/sSOwrpX.png
   - https://i.imgur.com/Q6NzWC8.png
 releaseNotes: >-
-  Initial release.
+  https://github.com/AnalogJ/scrutiny/releases/tag/v0.7.1
 dependencies: []
 path: ""
 defaultUsername: ""
